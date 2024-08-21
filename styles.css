@@ -260,15 +260,14 @@ section {
 
 .service-item img.floating-img {
     position: absolute;
-    width: 80px; /* Adjust as needed */
+    width: 30px; /* Adjust the size as needed */
     height: auto;
     opacity: 0.8;
-    /* Set random positions - adjust based on card size */
-    top: -10px; /* Example top-left position */
-    left: 10px;
-    transform: rotate(-10deg); /* You can add slight rotations for randomness */
+    /* Position the image at the upper side of the card */
+    top: 10px; /* Adjust the vertical position */
+    left: 50%; /* Center the image horizontally */
+    transform: translateX(-50%) rotate(-10deg); /* Center align and slightly rotate */
 }
-
 .service-item h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
