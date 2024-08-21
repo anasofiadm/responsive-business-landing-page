@@ -53,6 +53,43 @@ a {
     display: inline-block;
 }
 
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.card h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.card p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.card-icon {
+    width: 40px; /* Adjust the size of the icon */
+    height: auto;
+    margin-bottom: 10px; /* Space between the icon and the heading */
+}
+
+@media (max-width: 768px) {
+    .value-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .small-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 .features {
     padding: 20px;
 }
