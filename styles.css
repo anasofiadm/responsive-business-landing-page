@@ -71,6 +71,21 @@ a {
     justify-content: space-between;
 }
 
+.big-card img {
+    width: 100%;
+    max-height: 300px; /* Set a maximum height for the image */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    border-radius: 8px; /* Matches the card’s border-radius */
+    margin-top: 15px; /* Adds some space between the text and the image */
+}
+
+@media (max-width: 768px) {
+    .big-card img {
+        max-height: 200px; /* Reduce the height further on smaller screens */
+    }
+}
+
+
 .small-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
