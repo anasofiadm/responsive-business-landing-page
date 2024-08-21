@@ -53,32 +53,56 @@ a {
     display: inline-block;
 }
 
-.card {
+.value-grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr; /* Big card takes 2/5, small cards take 3/5 */
+    gap: 20px;
+    align-items: start;
+}
+
+.big-card {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.small-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .card h4 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-size: 1.3em;
+    margin-bottom: 8px;
     color: #007BFF;
 }
 
 .card p {
-    font-size: 1.1em;
+    font-size: 1em;
     color: #555;
 }
 
 .card-icon {
-    width: 40px; /* Adjust the size of the icon */
+    width: 40px;
     height: auto;
-    margin-bottom: 10px; /* Space between the icon and the heading */
+    margin-bottom: 8px;
 }
 
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .value-grid {
         grid-template-columns: 1fr;
@@ -88,7 +112,6 @@ a {
         grid-template-columns: 1fr;
     }
 }
-
 
 .features {
     padding: 20px;
