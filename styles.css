@@ -235,7 +235,7 @@ section {
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -243,11 +243,12 @@ section {
 
 .service-item {
     background-color: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     text-align: left;
     color: #333;
-    text-decoration: none; /* Remove underline from links */
+    text-decoration: none;
+    position: relative; /* Necessary for floating image positioning */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -257,26 +258,28 @@ section {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
-.service-item img {
-    width: 100%;
+.service-item img.floating-img {
+    position: absolute;
+    width: 80px; /* Adjust as needed */
     height: auto;
-    object-fit: cover;
-    margin-bottom: 15px;
-    border-radius: 4px;
+    opacity: 0.8;
+    /* Set random positions - adjust based on card size */
+    top: -10px; /* Example top-left position */
+    left: 10px;
+    transform: rotate(-10deg); /* You can add slight rotations for randomness */
 }
 
 .service-item h3 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
     color: #007BFF;
 }
 
 .service-item p {
-    font-size: 1em;
-    margin-bottom: 15px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
     color: #555;
 }
-
 
 .contact {
     padding: 40px 20px;
