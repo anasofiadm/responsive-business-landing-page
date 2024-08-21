@@ -172,6 +172,7 @@ section {
 .social-proof h2 {
     font-size: 2em;
     margin-bottom: 40px;
+    color: #333;
 }
 
 .testimonial-grid {
@@ -180,14 +181,14 @@ section {
     gap: 20px;
 }
 
-.testimonial-card {
-    background-color: #ffffff;
+.testimonial-item {
+    background-color: transparent;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    text-align: left;
 }
 
-.testimonial-card img {
+.testimonial-item img {
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -195,18 +196,18 @@ section {
     margin-bottom: 20px;
 }
 
-.testimonial-card h4 {
-    margin-top: 20px;
+.testimonial-item h4 {
+    margin-top: 15px;
     font-size: 1.1em;
-    color: #333;
+    color: #007BFF;
 }
 
-.testimonial-card p {
+.testimonial-item p {
     font-size: 1em;
     color: #555;
 }
 
-.testimonial-card .cta-link {
+.testimonial-item .cta-link {
     display: inline-block;
     margin-top: 15px;
     color: #007BFF;
@@ -215,7 +216,7 @@ section {
     transition: color 0.3s ease;
 }
 
-.testimonial-card .cta-link:hover {
+.testimonial-item .cta-link:hover {
     color: #0056b3;
 }
 
