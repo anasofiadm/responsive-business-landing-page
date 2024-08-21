@@ -136,29 +136,30 @@ section {
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 20px; /* Increase gap for better spacing */
 }
 
 .feature-card-small {
     background-color: #ffffff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Match padding to the larger card */
+    border-radius: 12px; /* Match border-radius to the larger card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Match shadow for consistency */
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%; /* Ensure all small cards stretch to the same height */
 }
 
 .feature-card-small-icon {
-    width: 70px;
+    width: 80px; /* Adjust icon size */
     height: auto;
-    margin: 0 auto 10px; /* Center the image and add margin below */
+    margin: 0 auto 20px; /* Center the icon and add margin below */
 }
 
 .feature-card-small h4 {
-    font-size: 1.3em;
-    margin-bottom: 8px;
+    font-size: 1.4em; /* Adjust font size for better consistency */
+    margin-bottom: 10px; /* Margin below the heading */
     color: #007BFF;
 }
 
