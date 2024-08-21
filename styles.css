@@ -149,12 +149,13 @@ section {
     flex-direction: column;
     justify-content: space-between;
     height: 100%; /* Ensure all small cards stretch to the same height */
+    box-sizing: border-box; /* Ensure padding is included in the height */
 }
 
 .feature-card-small-icon {
     width: 80px; /* Adjust icon size */
     height: auto;
-    margin: 0 auto 20px; /* Center the icon and add margin below */
+    margin: 0 auto 10px; /* Center the icon and reduce bottom margin */
 }
 
 .feature-card-small h4 {
