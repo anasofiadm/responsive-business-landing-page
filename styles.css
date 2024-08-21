@@ -109,33 +109,83 @@ a {
 
 
 
-/* Contact Form Section */
 .contact {
-    padding: 50px 20px;
-    background: #fff;
+    padding: 40px 20px;
     text-align: center;
+    background-color: #f9f9f9;
 }
 
-form {
-    max-width: 500px;
-    margin: 0 auto;
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
 }
 
-input, textarea {
-    width: 100%;
+.contact p {
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Grid container for the image and form */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns: image on the left, form on the right */
+    gap: 20px; /* Space between the image and form */
+    align-items: center; /* Vertically center the content */
+    text-align: left; /* Align text to the left */
+}
+
+.contact-image img {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.contact-form label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form input, 
+.contact-form textarea {
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-size: 1em;
 }
 
-button {
-    background: #007bff;
-    color: white;
-    padding: 10px 20px;
+.contact-form button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 1em;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr; /* Stack image and form on top of each other */
+    }
+
+    .contact-image {
+        margin-bottom: 20px; /* Add space below the image */
+    }
 }
 
 /* Footer Section */
