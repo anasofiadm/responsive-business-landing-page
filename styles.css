@@ -66,22 +66,22 @@ section {
     display: inline-block;
 }
 
+/* Value Grid Section */
 .value-grid {
     display: grid;
     grid-template-columns: 2fr 3fr; /* Big card takes 2/5, small cards take 3/5 */
     gap: 20px;
-    align-items: start;
+    align-items: stretch; /* Ensures all items have the same height */
 }
 
-.big-card {
+.big-card, .card {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 20px; /* Padding for big card */
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; /* Aligns content in the card */
 }
 
 .big-card img {
@@ -90,12 +90,6 @@ section {
     object-fit: cover; /* Ensures the image covers the space without distortion */
     border-radius: 8px; /* Matches the card’s border-radius */
     margin-top: 15px; /* Adds some space between the text and the image */
-}
-
-@media (max-width: 768px) {
-    .big-card img {
-        max-height: 200px; /* Reduce the height further on smaller screens */
-    }
 }
 
 .big-card .cta-button {
@@ -114,7 +108,6 @@ section {
     background-color: #0056b3;
 }
 
-
 .small-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -122,11 +115,13 @@ section {
 }
 
 .card {
-    background-color: #ffffff;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Aligns content in the card */
 }
 
 .card h4 {
@@ -143,7 +138,7 @@ section {
 .card-icon {
     width: 60px;
     height: auto;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
 }
 
 /* Responsive Adjustments */
@@ -155,7 +150,7 @@ section {
     .small-cards {
         grid-template-columns: 1fr;
     }
-}
+
 
 /* Margin for sections */
 section {
