@@ -112,3 +112,27 @@ button {
     }
 }
 
+
+.marquee div {
+  .marquee {
+    width: 100%; /* Full width */
+    overflow: hidden; /* Hide the overflow of the text */
+    background-color: black; /* Background color black */
+    color: white; /* Text color white */
+    position: relative;
+}
+
+.marquee p {
+    display: inline-block;
+    white-space: nowrap; /* Prevent text from wrapping */
+    position: absolute;
+    animation: marquee 10s linear infinite; /* Apply the animation */
+}  
+}
+@keyframes animate {
+    100% {
+        transform: translateX(100%); 
+    }
+}
+
+
