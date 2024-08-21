@@ -258,7 +258,7 @@ section {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
-.service-item img.floating-img {
+.service-item img .floating-img {
     position: absolute;
     width: 30px; /* Adjust the size as needed */
     height: auto;
