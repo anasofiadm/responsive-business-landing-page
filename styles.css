@@ -126,11 +126,4 @@ button {
     animation: marquee 10s linear infinite; /* Apply the animation */
 }
 
-@keyframes marquee {
-    0% {
-        transform: translateX(-100%); /* Start from the left outside the container */
-    }
-    100% {
-        transform: translateX(100%); /* Move to the right outside the container */
-    }
-}
+
