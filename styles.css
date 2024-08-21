@@ -81,44 +81,56 @@ section {
 .feature-card {
     background-color: #ffffff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* Slightly larger radius for a softer look */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow for more emphasis */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    position: relative; /* Position relative for floating image effect */
+    align-items: center; /* Center align items within the card */
+    text-align: center; /* Center text */
+    position: relative;
+    overflow: hidden; /* Ensure the content doesn’t overflow */
+    margin: 20px; /* Add margin for spacing between cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
 }
 
 .feature-card-image {
-    width: 100%;
-    max-height: 300px; /* Set a maximum height for the image */
-    object-fit: cover; /* Ensures the image covers the space without distortion */
-    border-radius: 8px; /* Matches the card’s border-radius */
-    margin-top: 15px; /* Adds some space between the text and the image */
-    position: relative;
-    top: 15px; /* Adjust the top position */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center the image */
+    width: 100%; /* Set to 100% of the card width */
+    max-height: 200px; /* Adjust maximum height for proportion */
+    object-fit: cover;
+    border-radius: 12px; /* Match card border-radius */
+    margin-bottom: 20px; /* Space between image and text */
 }
 
-.feature-card h3, .feature-card p {
-    margin: 0;
+.feature-card h3 {
+    font-size: 1.5em; /* Increase font size for better emphasis */
+    color: #333; /* Darker text for better readability */
+    margin: 10px 0; /* Margin around the heading */
+}
+
+.feature-card p {
+    font-size: 1em;
+    color: #666; /* Lighter text for description */
+    margin: 0 0 20px; /* Margin below the paragraph */
 }
 
 .cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
     background-color: #007BFF;
     color: #ffffff;
+    padding: 12px 20px; /* Adjust padding for a balanced look */
+    border-radius: 8px; /* Slightly larger radius to match card */
+    font-size: 1em; /* Adjust font size for better proportion */
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
 }
 
 .cta-button:hover {
     background-color: #0056b3;
+    transform: scale(1.05); /* Slightly scale up button on hover */
+}
+
+.feature-card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: translateY(-10px); /* Lift card slightly on hover */
 }
 
 .feature-grid {
