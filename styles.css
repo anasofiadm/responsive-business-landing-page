@@ -85,6 +85,22 @@ a {
     }
 }
 
+.big-card .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #007BFF;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.big-card .cta-button:hover {
+    background-color: #0056b3;
+}
+
 
 .small-cards {
     display: grid;
