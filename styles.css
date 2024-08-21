@@ -253,21 +253,31 @@ section {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+.service-item {
+    position: relative;
+    padding-top: 50px; /* Space for the floating image */
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
- .floating-img {
+.floating-img {
     position: absolute;
-    width: 70px; /* Adjust the size as needed */
-    height: auto;
-    opacity: 0.8;
-    /* Position the image at the upper side of the card */
-    top: 10px; /* Adjust the vertical position */
+    top: -30px; /* Position the image slightly above the card */
     left: 50%; /* Center the image horizontally */
-    transform: translateX(-50%) rotate(-10deg); /* Center align and slightly rotate */
+    transform: translateX(-50%); /* Center the image exactly */
+    width: 60px; /* Adjust the size as needed */
+    height: auto;
+    opacity: 0.9;
 }
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
 .service-item h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
