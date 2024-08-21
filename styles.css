@@ -19,9 +19,8 @@ a {
 }
 
 section {
-    margin: 0 10%; /* Global margin for all sections */
-    *padding: 40px 0;
-    background-color: #ffffff; /* Ensure sections have white background */
+    margin: 0 5%;
+    padding: 40px 0;
 }
 
 /* For smaller screens */
@@ -40,7 +39,6 @@ section {
     padding: 100px 20px;
     text-align: center;
     overflow: hidden; /* Ensures the overlay stays within the hero section */
-    margin: 20px 0; /* Subtle margin */
 }
 
 .hero::before {
@@ -69,11 +67,10 @@ section {
 
 /* Value Proposition Section */
 .value-proposition {
+    margin: 0 auto; /* Center align the section */
     padding: 40px 20px;
-    margin: 20px 0; /* Subtle margin */
 }
 
-/* Value Grid Styling */
 .value-grid {
     display: grid;
     grid-template-columns: 2fr 3fr; /* Large card takes 2/5, small cards take 3/5 */
@@ -98,7 +95,7 @@ section {
     object-fit: cover; /* Ensures the image covers the space without distortion */
     border-radius: 8px; /* Matches the card’s border-radius */
     margin-top: 15px; /* Adds some space between the text and the image */
-    position: absolute; /* Position absolute for floating effect */
+    position: relative;
     top: 15px; /* Adjust the top position */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center the image */
@@ -173,11 +170,80 @@ section {
     }
 }
 
+/* Margin for sections */
+section {
+    margin: 0 5%; /* Adjusts margins to not be too narrow or too wide */
+}
+
+/* Social Proof Styling */
+.social-proof {
+   background-color: #ffffff
+    padding: 60px 0;
+    text-align: center;
+}
+
+.social-proof h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-item {
+    background-color: transparent;
+    padding: 20px;
+    color: #333;
+    text-align: left;
+}
+
+.testimonial-item img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.testimonial-item h4 {
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: #007BFF;
+}
+
+.testimonial-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+.testimonial-item .cta-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.testimonial-item .cta-link:hover {
+    color: #0056b3;
+}
+
 /* Services Section Styling */
 .services {
     padding: 60px 20px;
-    margin: 20px 0; /* Subtle margin */
-    background-color: #ffffff; /* White background */
+   background-color: #ffffff
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #333;
 }
 
 .service-grid {
@@ -187,6 +253,8 @@ section {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+
 
 .service-item {
     position: relative;
@@ -229,8 +297,7 @@ section {
 /* Contact Section */
 .contact {
     padding: 40px;
-    margin: 20px 0; /* Subtle margin */
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff
 }
 
 .contact-content {
@@ -306,7 +373,6 @@ section {
     }
 }
 
-/* Footer Styling */
 .footer {
     background-color: #333;
     color: #fff;
@@ -349,4 +415,56 @@ section {
 
 .footer-right ul li a:hover {
     text-decoration: underline;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons li a {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons li a:hover {
+    color: #007BFF;
+}
+
+.back-to-top {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.back-to-top a {
+    color: #007BFF;
+    font-size: 2em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-to-top a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
