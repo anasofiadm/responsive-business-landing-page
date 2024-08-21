@@ -53,32 +53,36 @@ a {
     display: inline-block;
 }
 
-/* Features Section */
 .features {
-    padding: 50px 20px;
-    background: #f4f4f4;
-    text-align: center;
+    padding: 20px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Create responsive columns */
+    gap: 20px; /* Space between grid items */
 }
 
 .feature-item {
-    display: flex;
-    align-items: center; /* Center the image and text vertically */
+    display: grid;
+    grid-template-rows: auto 1fr; /* Image and text sections */
     background-color: #f8f8f8; /* Light background for the feature box */
     border-radius: 8px; /* Rounded corners */
     padding: 20px; /* Space inside the box */
-    margin-bottom: 20px; /* Space between feature boxes */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensure content stays within rounded corners */
+    text-align: center; /* Center text within the box */
 }
 
 .feature-item img {
-    width: 100px; /* Fixed width for the image */
+    width: 113.4px; /* Fixed width of 3 cm */
     height: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Space between the image and the text */
+    margin: 0 auto 10px; /* Center image and add space below */
     border-radius: 8px; /* Rounded corners on the image */
 }
 
 .feature-text {
-    flex-grow: 1; /* Allow text to take up remaining space */
+    padding-top: 10px; /* Space between image and text */
 }
 
 .feature-text h3 {
@@ -95,20 +99,14 @@ a {
 /* Responsive Design */
 @media (max-width: 768px) {
     .feature-item {
-        flex-direction: column; /* Stack image on top of text */
-        text-align: center; /* Center the text */
+        text-align: center; /* Center text and image for smaller screens */
     }
 
     .feature-item img {
-        margin-right: 0; /* Remove right margin when stacked */
-        margin-bottom: 15px; /* Add space below the image */
-        width: 80%; /* Make the image width more flexible */
-    }
-
-    .feature-text {
-        text-align: center; /* Center the text */
+        width: 80%; /* Make the image width more flexible on smaller screens */
     }
 }
+
 
 
 /* Contact Form Section */
