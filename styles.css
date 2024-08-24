@@ -415,8 +415,7 @@ section {
     padding: 20px;
     padding-bottom: 0; /* Remove bottom padding */
     margin-bottom: 0;  /* Remove bottom margin */
-    text-align: center;
-    position: relative;
+    text-align: center
 }
 
 .footer-container {
