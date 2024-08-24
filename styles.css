@@ -322,7 +322,6 @@ section {
 /* Contact Section */
 .contact {
     padding: 40px;
-    background-color: #ffffff;
 }
 
 .contact-content {
@@ -375,6 +374,7 @@ section {
     border: 1px solid #ddd;
     border-radius: 4px;
     width: 100%;
+    font-family: "Sora", sans-serif;
 }
 
 .contact-form button {
