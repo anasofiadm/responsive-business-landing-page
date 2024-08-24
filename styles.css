@@ -345,7 +345,7 @@ section {
     justify-content: center;
     padding: 20px; /* Add subtle padding around the form */
     margin: 10px; /* Add subtle margin around the form */
-    background-color: #f9f9f9; /* Optional: Light background for better contrast */
+    *background-color: #f9f9f9; /* Optional: Light background for better contrast */
     border-radius: 8px; /* Optional: Slightly rounded corners for a polished look */
 }
 
