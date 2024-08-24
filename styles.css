@@ -322,7 +322,7 @@ section {
 /* Contact Section */
 .contact {
     padding: 40px;
-    background-color: #ffffff
+    background-color: #ffffff;
 }
 
 .contact-content {
@@ -344,6 +344,10 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 20px; /* Add subtle padding around the form */
+    margin: 10px; /* Add subtle margin around the form */
+    background-color: #f9f9f9; /* Optional: Light background for better contrast */
+    border-radius: 8px; /* Optional: Slightly rounded corners for a polished look */
 }
 
 .contact-details h2 {
@@ -357,6 +361,7 @@ section {
 .contact-form {
     display: flex;
     flex-direction: column;
+    margin-top: 20px; /* Add margin to create space between form and other content */
 }
 
 .contact-form label {
@@ -396,12 +401,20 @@ section {
     .contact-image img {
         margin-bottom: 20px;
     }
+
+    .contact-details {
+        padding: 15px; /* Adjust padding for smaller screens */
+        margin: 5px; /* Adjust margin for smaller screens */
+    }
 }
+
 
 .footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
+    padding-bottom: 0; /* Remove bottom padding */
+    margin-bottom: 0;  /* Remove bottom margin */
     text-align: center;
     position: relative;
 }
