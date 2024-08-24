@@ -408,7 +408,6 @@ section {
     }
 }
 
-
 .footer {
     background-color: #333;
     color: #fff;
@@ -419,27 +418,18 @@ section {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer-left p, .footer-left small {
-    margin: 5px 0;
-    font-size: 0.9em;
-}
-
-.footer-center {
-    margin-top: 10px;
+    justify-content: center;
 }
 
 .social-icons {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 0 20px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .social-icons li {
@@ -457,10 +447,13 @@ section {
     color: #007BFF;
 }
 
+.footer-text p, .footer-text small {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
 .back-to-top {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
+    margin-top: 20px;
 }
 
 .back-to-top a {
@@ -477,22 +470,15 @@ section {
 /* Responsive Design */
 @media (max-width: 768px) {
     .footer-container {
-        flex-direction: column;
         text-align: center;
     }
 
-    .footer-left {
-        margin-bottom: 10px;
-    }
-
     .social-icons {
-        justify-content: center;
-        margin-top: 10px;
+        margin-bottom: 15px;
     }
 
     .back-to-top {
-        position: static;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 }
 
